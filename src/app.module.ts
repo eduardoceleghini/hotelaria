@@ -3,11 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HotelModule } from './hotel/hotel.module';
 import { HospedeModule } from './hospede/hospede.module';
-import { QuartoHotelModule } from './quarto-hotel/quarto-hotel.module';
-import { CategoriaQuartoModule } from './categoria-quarto/categoria-quarto.module';
+import { QuartoModule } from './quarto/quarto.module';
+import { CategoriaModule } from './categoria/categoria.module';
 
 @Module({
-  imports: [HotelModule, HospedeModule, QuartoHotelModule, CategoriaQuartoModule],
+  imports: [HotelModule, HospedeModule, QuartoModule, CategoriaModule],
   controllers: [AppController],
   providers: [AppService],
 })
